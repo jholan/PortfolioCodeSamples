@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="General">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="General\Entity">
+      <UniqueIdentifier>{768af065-8888-4116-9e9d-4ca3aaf4e129}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main_Win32.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="App.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCommon.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\Entity.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="Menus\Menu.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState\GameState.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState\LoadState.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState\AttractState.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState\CharacterSelectState.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState\PlayState.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\PlayerTank.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\Terrain.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\PlayerTurret.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\HealthPool.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Tags.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\BombEnemy.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\BombEnemySpawner.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\Bullet.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="Raycast\RaycastUtils.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App.hpp">
+      <Filter>General</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.hpp">
+      <Filter>General</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCommon.hpp">
+      <Filter>General</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineBuildPreferences.hpp">
+      <Filter>General</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Entity.hpp" />
+    <ClInclude Include="Menus\Menu.hpp" />
+    <ClInclude Include="GameState\LoadState.hpp" />
+    <ClInclude Include="GameState\GameState.hpp" />
+    <ClInclude Include="GameState\AttractState.hpp" />
+    <ClInclude Include="GameState\CharacterSelectState.hpp" />
+    <ClInclude Include="GameState\PlayState.hpp" />
+    <ClInclude Include="Entity\PlayerTank.hpp" />
+    <ClInclude Include="Terrain\Terrain.hpp" />
+    <ClInclude Include="Entity\PlayerTurret.hpp" />
+    <ClInclude Include="Components\HealthPool.hpp" />
+    <ClInclude Include="Components\Tags.hpp" />
+    <ClInclude Include="Raycast\RaycastHit3.hpp" />
+    <ClInclude Include="Entity\BombEnemy.hpp" />
+    <ClInclude Include="Entity\BombEnemySpawner.hpp" />
+    <ClInclude Include="Entity\Bullet.h" />
+    <ClInclude Include="Raycast\RaycastUtils.hpp" />
+  </ItemGroup>
+</Project>

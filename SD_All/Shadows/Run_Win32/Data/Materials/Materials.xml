@@ -1,0 +1,208 @@
+<Materials>
+
+
+
+	<!-- Debug Draw -->
+	<!--<Material name="DebugDraw_3D_depth" >
+		<Shader name="DebugDraw_3D_depth" />
+		
+		<DiffuseTexture filepath="Data/BuiltIns/DEFAULT_TEXTURE.png" />
+		
+		<Property name="TINT" type="RGBA" value="255,255,255" />
+	</Material>
+	
+	<Material name="DebugDraw_3D_noDepth" base="DebugDraw_3D_depth" >
+		<Shader name="DebugDraw_3D_noDepth" />
+	</Material>
+	
+	<Material name="DebugDraw_2D" >
+		<Shader name="DebugDraw_2D" />
+		
+		<DiffuseTexture filepath="Data/BuiltIns/DEFAULT_TEXTURE.png" />
+		
+		<Property name="TINT" type="RGBA" value="255,255,255" />
+	</Material>-->
+	
+	
+	
+	<!-- Lighting Tests -->
+	<Material name="couch">
+		<Shader name="lit_3d_depth" />
+		
+		<DiffuseTexture filepath="Data/Images/example_colour.png" />
+		<NormalMap 		filepath="Data/Images/example_normal.png" />
+		
+		<Property name="SPECULAR_AMOUNT" type="float" value="0.25f" />
+		<Property name="SPECULAR_POWER"  type="float" value="50.0f" />
+		
+	</Material>
+	
+	<Material name="couch_flat" base="couch">
+		<NormalMap filepath="Data/BuiltIns/NORMAL_MAP_FLAT.png" />
+	</Material>
+	
+	
+	
+	<!-- Miku -->
+	<Material name="Miku_Body">
+		<Shader name="lit_3d_depth" />
+		
+		<DiffuseTexture filepath="Data/Images/SnowMikuBody.png" />
+		
+		<Property name="SPECULAR_AMOUNT" type="float" value="0.25f" />
+		<Property name="SPECULAR_POWER"  type="float" value="50.0f" />
+	</Material>
+	
+	<Material name="Miku_Base">
+		<Shader name="lit_3d_depth_alpha" />
+		
+		<DiffuseTexture filepath="Data/Images/SnowMikuBase.png" />
+		
+		<Property name="SPECULAR_AMOUNT" type="float" value="0.25f" />
+		<Property name="SPECULAR_POWER"  type="float" value="50.0f" />
+	</Material>
+	
+	<Material name="Miku_Frills">
+		<Shader name="lit_3d_depth_alpha" />
+		
+		<DiffuseTexture filepath="Data/Images/SnowMikuFrills.png" />
+		
+		<Property name="SPECULAR_AMOUNT" type="float" value="0.25f" />
+		<Property name="SPECULAR_POWER"  type="float" value="50.0f" />
+	</Material>
+	
+	
+	
+	<!-- Gumi -->
+	<Material name="Gumi_Body">
+		<Shader name="lit_3d_depth" />
+		
+		<DiffuseTexture filepath="Data/Images/GumiBody.png" />
+		
+		<Property name="SPECULAR_AMOUNT" type="float" value="0.25f" />
+		<Property name="SPECULAR_POWER"  type="float" value="50.0f" />
+	</Material>
+	
+	<Material name="Gumi_Base">
+		<Shader name="lit_3d_depth_alpha" />
+		
+		<DiffuseTexture filepath="Data/Images/GumiBase.png" />
+		
+		<Property name="SPECULAR_AMOUNT" type="float" value="0.25f" />
+		<Property name="SPECULAR_POWER"  type="float" value="50.0f" />
+	</Material>
+	
+	<Material name="Gumi_Halo">
+		<Shader name="lit_3d_depth_alpha" />
+		
+		<DiffuseTexture filepath="Data/Images/GumiHalo.png" />
+		
+		<Property name="SPECULAR_AMOUNT" type="float" value="0.25f" />
+		<Property name="SPECULAR_POWER"  type="float" value="50.0f" />
+	</Material>
+	
+	
+	
+	<!-- Illya -->
+	<Material name="Illya" >
+		<Shader name="lit_3d_depth" />
+		
+		<DiffuseTexture filepath="Data/Images/Illya.png" />
+		
+		<Property name="SPECULAR_AMOUNT" type="float" value="0.25f" />
+		<Property name="SPECULAR_POWER"  type="float" value="50.0f" />
+	</Material>
+	
+	
+	<Material name="Rin" >
+		<Shader name="lit_3d_depth" />
+		
+		<DiffuseTexture filepath="Data/Images/Rin.png" />
+		
+		<Property name="SPECULAR_AMOUNT" type="float" value="0.25f" />
+		<Property name="SPECULAR_POWER"  type="float" value="50.0f" />
+	</Material>
+	
+	
+	
+	<!-- Particles -->
+	<Material name="AlphaParticle">
+		<Shader name="AdditiveParticle" />
+		
+		<DiffuseTexture filepath="Data/Images/ParticleSprite.png" />
+	</Material>
+	
+	
+	
+	<!-- Game -->
+	<Material name="Terrain" >
+		<Shader name="Terrain" />
+		
+		<DiffuseTexture filepath="Data/Images/terrainTex2.png" sampler="linear mipmap" />
+		<!--<DiffuseTexture filepath="Data/Images/savanna_dry_d.png" sampler="linear mipmap"/>-->
+		<!--<NormalMap 		filepath="Data/Images/example_normal.png" />-->
+		
+		<Property name="SPECULAR_AMOUNT" type="float" value="0.75f" />
+		<Property name="SPECULAR_POWER"  type="float" value="50.0f" />
+	</Material>
+	
+	<Material name="Water" >
+		<Shader name="Water" />
+		
+		<DiffuseTexture filepath="Data/Images/water.png" sampler="linear mipmap" />
+		
+		<Property name="TINT" type="RGBA" value="255,255,255" />
+		<Property name="SCROLL_SPEED" type="float" value="0.1f" />
+	</Material>
+	
+	<Material name="Ship" >
+		<Shader name="lit_3d_depth" />
+		
+		<DiffuseTexture filepath="Data/Images/example_colour.png" />
+		
+		<Property name="SPECULAR_AMOUNT" type="float" value="0.25f" />
+		<Property name="SPECULAR_POWER"  type="float" value="50.0f" />
+	</Material>
+	
+	<Material name="Bullet">
+		<Shader name="lit_3d_depth" />
+		
+		<DiffuseTexture  filepath="Data/Images/Seed.png" />
+		<NormalMap 		 filepath="Data/Images/example_normal.png" />
+		
+		<Property name="SPECULAR_AMOUNT" type="float" value="0.75f" />
+		<Property name="SPECULAR_POWER"  type="float" value="50.0f" />
+	</Material>
+	
+	<Material name="Bomber">
+		<Shader name="lit_3d_depth" />
+		
+		<DiffuseTexture  filepath="Data/Images/example_colour.png" />
+		<NormalMap 		 filepath="Data/Images/example_normal.png" />
+		
+		<Property name="SPECULAR_AMOUNT" type="float" value="0.75f" />
+		<Property name="SPECULAR_POWER"  type="float" value="50.0f" />
+	</Material>
+	
+	<Material name="Eye">
+		<Shader name="lit_3d_depth" />
+		
+		<DiffuseTexture  filepath="Data/Images/Seed.png" />
+		<NormalMap 		 filepath="Data/Images/example_normal.png" />
+		
+		<Property name="SPECULAR_AMOUNT" type="float" value="0.75f" />
+		<Property name="SPECULAR_POWER"  type="float" value="50.0f" />
+	</Material>
+	
+	<Material name="Spawner">
+		<Shader name="lit_3d_depth" />
+		
+		<DiffuseTexture  filepath="Data/Images/example_colour.png" />
+		<NormalMap 		 filepath="Data/Images/example_normal.png" />
+		
+		<Property name="SPECULAR_AMOUNT" type="float" value="0.75f" />
+		<Property name="SPECULAR_POWER"  type="float" value="50.0f" />
+	</Material>
+	
+
+</Materials>

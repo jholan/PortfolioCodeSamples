@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="General">
+      <UniqueIdentifier>{ec2cc6e5-ada6-4a72-a2f0-9412d0f64cf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{6e282d5a-9a42-46da-ba0c-306d6fa5167b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{7477bd4b-57fe-4f6d-a292-7fa8194d9338}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering">
+      <UniqueIdentifier>{ab95e454-cfa8-460d-b2e0-51f3c074a7f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{ee5378b5-15c1-4187-8c5b-bd1354418582}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio">
+      <UniqueIdentifier>{db45bd41-b055-4757-a02d-b651e56021f1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Math\Vector2.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\MathUtils.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\AABB2D.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Disc2D.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\RGBA.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\InputSystem.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering\Renderer.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\XboxController.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Time.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\IntVector2.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering\SpriteSheet.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\stb\stb_image.c">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering\Texture.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\AudioSystem.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ErrorWarningAssert.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\StringUtils.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\EngineCommon.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\FloatRange.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\IntRange.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\TinyXML2\tinyxml2.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\XmlUtilities.cpp" />
+    <ClCompile Include="Core\Blackboard.cpp" />
+    <ClCompile Include="Rendering\BitmapFont.cpp" />
+    <ClCompile Include="Core\Image.cpp" />
+    <ClCompile Include="Math\Matrix4.cpp" />
+    <ClCompile Include="Math\Vector3.cpp" />
+    <ClCompile Include="Core\Vertex.cpp" />
+    <ClCompile Include="Rendering\SpriteAnim.cpp" />
+    <ClCompile Include="Rendering\SpriteAnimDefinition.cpp" />
+    <ClCompile Include="Rendering\SpriteAnimSet.cpp" />
+    <ClCompile Include="Rendering\SpriteAnimSetDefinition.cpp" />
+    <ClCompile Include="Math\CubicSpline.cpp" />
+    <ClCompile Include="Rendering\GLFunctions.cpp" />
+    <ClCompile Include="Rendering\ShaderProgram.cpp" />
+    <ClCompile Include="Rendering\RenderBuffer.cpp" />
+    <ClCompile Include="Core\Window.cpp" />
+    <ClCompile Include="Rendering\Sampler.cpp" />
+    <ClCompile Include="Commands\Command.cpp" />
+    <ClCompile Include="Commands\DevConsole.cpp" />
+    <ClCompile Include="Rendering\Camera.cpp" />
+    <ClCompile Include="Rendering\FrameBuffer.cpp" />
+    <ClCompile Include="Math\IntVector3.cpp" />
+    <ClCompile Include="Rendering\OrbitCamera.cpp" />
+    <ClCompile Include="Rendering\Sprite.cpp" />
+    <ClCompile Include="Core\Clock.cpp" />
+    <ClCompile Include="Rendering\IsoSprite.cpp" />
+    <ClCompile Include="Core\Stopwatch.cpp" />
+    <ClCompile Include="Math\Vector4.cpp" />
+    <ClCompile Include="Rendering\Mesh.cpp" />
+    <ClCompile Include="Rendering\MeshBuilder.cpp" />
+    <ClCompile Include="Rendering\MeshUtil.cpp" />
+    <ClCompile Include="Rendering\DebugRender.cpp" />
+    <ClCompile Include="Rendering\VertexAttribute.cpp" />
+    <ClCompile Include="Rendering\VertexLayout.cpp" />
+    <ClCompile Include="Rendering\Shader.cpp" />
+    <ClCompile Include="Rendering\UniformBuffer.cpp" />
+    <ClCompile Include="..\ThirdParty\MikkT\mikktspace.c" />
+    <ClCompile Include="Math\Quaternion.cpp" />
+    <ClCompile Include="Rendering\Material.cpp" />
+    <ClCompile Include="Rendering\Renderable.cpp" />
+    <ClCompile Include="Rendering\RenderScene.cpp" />
+    <ClCompile Include="Rendering\Light.cpp" />
+    <ClCompile Include="Rendering\ForwardRenderPath.cpp" />
+    <ClCompile Include="Rendering\ParticleEmitter.cpp" />
+    <ClCompile Include="Rendering\TextureCube.cpp" />
+    <ClCompile Include="Rendering\ShaderUniformDescriptions.cpp" />
+    <ClCompile Include="Rendering\PropertyBuffer.cpp" />
+    <ClCompile Include="Core\Transform.cpp" />
+    <ClCompile Include="Core\StaticScene.cpp" />
+    <ClCompile Include="Math\AABB3.cpp" />
+    <ClCompile Include="Math\Plane.cpp" />
+    <ClCompile Include="Math\Ray3.cpp" />
+    <ClCompile Include="Math\Sphere.cpp" />
+    <ClCompile Include="Profiler\ScopedProfileLogger.cpp" />
+    <ClCompile Include="Profiler\Profiler.cpp" />
+    <ClCompile Include="Profiler\ProfileScope.cpp" />
+    <ClCompile Include="Profiler\ProfilerVisualizer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Math\Vector2.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\MathUtils.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\AABB2D.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Disc2D.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\RGBA.hpp">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\InputSystem.hpp">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering\Renderer.hpp">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\XboxController.hpp">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Time.hpp">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\IntVector2.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering\SpriteSheet.hpp">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\stb\stb_image.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering\Texture.hpp">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\AudioSystem.hpp">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ErrorWarningAssert.hpp">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\StringUtils.hpp">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\EngineCommon.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\FloatRange.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\IntRange.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\TinyXML2\tinyxml2.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\XmlUtilities.hpp" />
+    <ClInclude Include="Core\Blackboard.hpp" />
+    <ClInclude Include="Rendering\BitmapFont.hpp" />
+    <ClInclude Include="Core\Image.hpp" />
+    <ClInclude Include="Math\Matrix4.hpp" />
+    <ClInclude Include="Core\Vertex.hpp" />
+    <ClInclude Include="Math\Vector3.hpp" />
+    <ClInclude Include="Rendering\SpriteAnim.hpp" />
+    <ClInclude Include="Rendering\SpriteAnimDefinition.hpp" />
+    <ClInclude Include="Rendering\SpriteAnimSet.hpp" />
+    <ClInclude Include="Rendering\SpriteAnimSetDefinition.hpp" />
+    <ClInclude Include="Math\CubicSpline.hpp" />
+    <ClInclude Include="..\ThirdParty\GL\glcorearb.h" />
+    <ClInclude Include="..\ThirdParty\GL\glext.h" />
+    <ClInclude Include="..\ThirdParty\GL\wglext.h" />
+    <ClInclude Include="Rendering\GLFunctions.h" />
+    <ClInclude Include="Rendering\ShaderProgram.h" />
+    <ClInclude Include="Rendering\RenderBuffer.h" />
+    <ClInclude Include="Core\Window.hpp" />
+    <ClInclude Include="Rendering\Sampler.hpp" />
+    <ClInclude Include="Commands\Command.hpp" />
+    <ClInclude Include="Commands\DevConsole.hpp" />
+    <ClInclude Include="Rendering\Camera.hpp" />
+    <ClInclude Include="Rendering\FrameBuffer.hpp" />
+    <ClInclude Include="Math\IntVector3.hpp" />
+    <ClInclude Include="Rendering\OrbitCamera.hpp" />
+    <ClInclude Include="..\ThirdParty\stb\stb_image_write.h" />
+    <ClInclude Include="Rendering\Sprite.hpp" />
+    <ClInclude Include="Core\Clock.hpp" />
+    <ClInclude Include="Rendering\IsoSprite.hpp" />
+    <ClInclude Include="Core\Stopwatch.hpp" />
+    <ClInclude Include="Math\Vector4.hpp" />
+    <ClInclude Include="Rendering\Mesh.hpp" />
+    <ClInclude Include="Rendering\MeshBuilder.hpp" />
+    <ClInclude Include="Rendering\MeshUtils.hpp" />
+    <ClInclude Include="Rendering\DebugRender.hpp" />
+    <ClInclude Include="Rendering\VertexAttribute.hpp" />
+    <ClInclude Include="Rendering\VertexLayout.hpp" />
+    <ClInclude Include="Rendering\Shader.hpp" />
+    <ClInclude Include="Rendering\UniformBuffer.hpp" />
+    <ClInclude Include="..\ThirdParty\MikkT\mikktspace.h" />
+    <ClInclude Include="Math\Quaternion.hpp" />
+    <ClInclude Include="Rendering\Material.hpp" />
+    <ClInclude Include="Rendering\Renderable.hpp" />
+    <ClInclude Include="Rendering\RenderScene.hpp" />
+    <ClInclude Include="Rendering\Light.hpp" />
+    <ClInclude Include="Rendering\ForwardRenderPath.hpp" />
+    <ClInclude Include="Rendering\ParticleEmitter.hpp" />
+    <ClInclude Include="Rendering\TextureCube.hpp" />
+    <ClInclude Include="Rendering\ShaderUniformDescriptions.hpp" />
+    <ClInclude Include="Rendering\PropertyBuffer.hpp" />
+    <ClInclude Include="Core\Transform.hpp" />
+    <ClInclude Include="Core\StaticScene.hpp" />
+    <ClInclude Include="Math\AABB3.hpp" />
+    <ClInclude Include="Math\Plane.hpp" />
+    <ClInclude Include="Math\Ray3.hpp" />
+    <ClInclude Include="Math\Sphere.hpp" />
+    <ClInclude Include="Profiler\ScopedProfileLogger.hpp" />
+    <ClInclude Include="Profiler\Profiler.hpp" />
+    <ClInclude Include="Profiler\ProfileScope.hpp" />
+    <ClInclude Include="Profiler\ProfilerVisualizer.hpp" />
+  </ItemGroup>
+</Project>
