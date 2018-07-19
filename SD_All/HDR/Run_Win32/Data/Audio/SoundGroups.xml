@@ -1,0 +1,8 @@
+<SoundGroups>
+
+	<SoundGroup name="TankFire">
+		<Sound filepath="Data/Audio/Boomerang.wav" weight="0.6"/>
+		<Sound filepath="Data/Audio/SeedShooter.wav" weight="0.7"/>
+	</SoundGroup>
+
+</SoundGroups>

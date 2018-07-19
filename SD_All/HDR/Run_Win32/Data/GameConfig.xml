@@ -1,0 +1,40 @@
+<GameConfig
+	
+	windowDimensions="1600,900"
+	
+	
+	renderer_ShaderFilesToLoad=
+		"Data/BuiltIns/SYSTEM_SHADERS.xml"
+	renderer_MaterialFilesToLoad=
+		"Data/BuiltIns/SYSTEM_MATERIALS.xml"
+		
+	
+	loadStateBackground="Data/Images/LoadScreen.png"
+	shaderFilesToLoad=
+		"Data/Shaders/Shaders.xml"
+	materialFilesToLoad=
+		"Data/Materials/Materials.xml"
+	modelsToLoad=
+		"Data/Models/SnowMiku.obj"
+	texturesToLoad=
+		"Data/Images/AttractBackground.png,
+		
+		 Data/Images/GalaxyCube1.png,
+		 Data/Images/GalaxyCube2.png,
+		 Data/Images/GalaxyCube3.png,
+		 Data/Images/GalaxyCube4.png,
+		 Data/Images/GalaxyCube5.png,
+		 Data/Images/GalaxyCube6.png,
+		 
+		 Data/Images/SnowMikuBase.png,
+		 Data/Images/SnowMikuBody.png,
+		 Data/Images/SnowMikuFrills.png"
+	soundGroupFilesToLoad=
+		"Data/Audio/SoundGroups.xml"
+	
+	
+	attractStateBackground="Data/Images/AttractScreen.png"
+	
+	
+	characterSelectStateBackground="Data/Images/CharacterSelectScreen.png"
+/>

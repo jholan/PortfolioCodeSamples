@@ -1,0 +1,134 @@
+<Shaders>
+	
+	<!-- Cube Map Generator -->
+	<Shader name="CubeMapGenerator" >
+		<Program name="Data/Shaders/CubeMapGenerator" />
+		<Depth test="always" write="false" />
+		<Cull mode="front" />
+	</Shader>
+
+	
+	<!-- Terrain -->
+	<Shader name="Terrain">
+		<Ordering queue="opaque" />
+		<Program name="Data/Shaders/Phong_v2"/>
+		
+		<Depth test="less" write="true" />
+		<Fill mode="solid" />
+		<Cull mode="back" />
+	</Shader>
+	
+	
+	
+	<!-- Water -->
+	<Shader name="Water">
+		<Ordering queue="opaque" />
+		<Program name="Data/Shaders/Water"/>
+		
+		<Depth test="less" write="true" />
+	</Shader>
+	
+	
+	<!-- Skybox -->
+	<Shader name="Skybox">
+		<Program name="Data/Shaders/Skybox" />
+		<Depth test="always" write="false" />
+		<Cull mode="none" />
+	</Shader>
+	
+	
+	
+	<!-- Particles -->
+	<Shader name="AdditiveParticle">
+		<Ordering queue="particles" />
+		<Program name="Data/Shaders/AdditiveParticle" defines="TEXTURES" />
+		
+		<Blend>
+			<Color op="add" src="one" dst="one"/>
+			<Alpha op="add" src="one" dst="one"/>
+		</Blend>
+		<Depth test="less" write="false" />
+	</Shader>
+	
+	
+	
+	<!-- Lit Shaders -->
+	<Shader name="lit_3d_depth">
+		<Ordering queue="opaque" />
+		<Program name="Data/Shaders/Phong_v2"/>
+		
+		<Depth test="less" write="true" />
+	</Shader>
+	
+	<Shader name="lit_3d_depth_alpha">
+		<Ordering queue="alpha" />
+		<Program name="Data/Shaders/Phong_v2"/>
+		
+		<Depth test="less" write="false" />
+	</Shader>
+	
+	
+	
+	<!-- Full Screen Effects -->
+	<Shader name="FSFX_Desaturation">
+		<Program name="Data/Shaders/Desaturation" />
+	</Shader>
+	
+	<Shader name="FSFX_Saturation">
+		<Program name="Data/Shaders/Saturation" />
+	</Shader>
+	
+	<Shader name="Tonemapper">
+		<Program name="Data/Shaders/Tonemapper" />
+	</Shader>
+	
+	<Shader name="AutoExposureTonemapper">
+		<Program name="Data/Shaders/AutoExposureTonemapper" />
+	</Shader>
+	
+	<Shader name="FSFX_Reinhard">
+		<Program name="Data/Shaders/ReinhardTonemapper" />
+	</Shader>
+	
+	<Shader name="FSFX_GammaEncoder">
+		<Program name="Data/Shaders/GammaEncoder" />
+	</Shader>
+	
+	<Shader name="AutoExposure">
+		<Program name="Data/Shaders/AutoExposure" />
+	</Shader>
+	
+	<Shader name="BrightnessExtraction">
+		<Program name="Data/Shaders/BrightnessExtraction" />
+	</Shader>
+	
+	<Shader name="Blur_Horizontal">
+		<Program name="Data/Shaders/Blur" defines="HORIZONTAL"/>
+	</Shader>
+	
+	<Shader name="Blur_Horizontal">
+		<Program name="Data/Shaders/Blur" defines="VERTICAL"/>
+	</Shader>
+	
+	<Shader name="BrightnessSum">
+		<Program name="Data/Shaders/BrightnessSum" />
+	</Shader>
+	
+	
+	
+	<!-- Space Game -->
+	<Shader name="Lazer">
+		<Ordering queue="alpha" />
+		<Program name="Data/Shaders/AdditiveParticle" defines="TEXTURES" />
+		
+		<Blend>
+			<Color op="add" src="one" dst="one"/>
+			<Alpha op="add" src="one" dst="one"/>
+		</Blend>
+		<Depth test="less" write="false" />
+		<Cull mode="none" />
+	</Shader>
+	
+	
+	
+</Shaders>

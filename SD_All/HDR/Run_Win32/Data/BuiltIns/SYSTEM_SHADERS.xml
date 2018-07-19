@@ -1,0 +1,35 @@
+<Shaders>
+	
+	
+	<!-- Basic Shaders -->
+	<Shader name="Default_2D">
+		<Program name="Data/Shaders/default"/>
+	</Shader>
+	
+	
+	
+	<!-- Debug Draw Shaders -->
+	<Shader name="DebugDraw_2D">
+		<Program name="Data/Shaders/DebugDraw"/>
+	</Shader>
+	
+	<Shader name="DebugDraw_3D_noDepth">
+		<Program name="Data/Shaders/DebugDraw"/>
+		<Depth write="false" test="always" />
+	</Shader>
+	
+	<Shader name="DebugDraw_3D_depth">
+		<Program name="Data/Shaders/DebugDraw"/>
+		<Depth write="true" test="less"/>
+	</Shader>
+	
+	
+	
+	<!-- Shadow Mapping Shaders -->
+	<Shader name="ShadowMapping" >
+		<Program name="Data/Shaders/DepthOnly" />
+		<Depth write="true" test="less" />
+		<Cull mode="back" />
+	</Shader>
+	
+</Shaders>

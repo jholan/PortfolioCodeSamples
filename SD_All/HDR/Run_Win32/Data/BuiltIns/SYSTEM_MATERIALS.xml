@@ -1,0 +1,36 @@
+<Materials>
+
+
+
+	<!-- Debug Draw Materials -->
+	<Material name="DebugDraw_3D_depth" >
+		<Shader name="DebugDraw_3D_depth" />
+		
+		<DiffuseTexture filepath="Data/BuiltIns/DEFAULT_TEXTURE.png" />
+		
+		<Property name="TINT" type="RGBA" value="255,255,255" />
+	</Material>
+	
+	<Material name="DebugDraw_3D_noDepth" base="DebugDraw_3D_depth" >
+		<Shader name="DebugDraw_3D_noDepth" />
+	</Material>
+	
+	<Material name="DebugDraw_2D" >
+		<Shader name="DebugDraw_2D" />
+		
+		<DiffuseTexture filepath="Data/BuiltIns/DEFAULT_TEXTURE.png" />
+		
+		<Property name="TINT" type="RGBA" value="255,255,255" />
+	</Material>
+	
+	
+	<!-- Shadow Mapping Materials -->
+	<Material name="ShadowMapping" >
+		<Shader name="ShadowMapping" />
+		
+	</Material>
+	
+	
+	
+
+</Materials>
