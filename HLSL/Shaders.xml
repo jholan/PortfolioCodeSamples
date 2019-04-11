@@ -1,0 +1,182 @@
+<Shaders>
+	
+	<!-- Cube Map Generator -->
+	<Shader name="CubeMapGenerator" >
+		<Program vertex="Data/HLSL/CubeMapGenerator.vs" fragment="Data/HLSL/CubeMapGenerator.fs" />
+		<Depth test="always" write="false" />
+		<Cull mode="front" />
+	</Shader>
+	
+	<Shader name="IrradianceMapGenerator" >
+		<Program vertex="Data/HLSL/IrradianceMapGenerator.vs" fragment="Data/HLSL/IrradianceMapGenerator.fs" />
+		<Depth test="always" write="false" />
+		<Cull mode="front" />
+	</Shader>
+	
+	<Shader name="SpecularIBLMapGenerator" >
+		<Program vertex="Data/HLSL/SpecularIBLGenerator.vs" fragment="Data/HLSL/SpecularIBLGenerator.fs" />
+		<Depth test="always" write="false" />
+		<Cull mode="front" />
+	</Shader>
+	
+	
+	
+	<!-- Skybox -->
+	<Shader name="SkyboxPost">
+		<Program vertex="Data/HLSL/Skybox.vs" fragment="Data/HLSL/Skybox.fs" />
+		<Depth write="false" test="lequal" />
+		<Cull mode="front" />
+	</Shader>
+	
+	<Shader name="ColorPost">
+		<Program vertex="Data/HLSL/ClearColorPost.vs" fragment="Data/HLSL/ClearColorPost.fs" />
+		<Depth write="false" test="lequal" />
+		<Cull mode="back" />
+	</Shader>
+	
+	
+	
+	<!-- PBR Material Shaders -->
+	<Shader name="Transparent">
+		<Ordering queue="alpha" />
+		<Program vertex="Data/HLSL/Passthrough_PCUTBN.vs" fragment="Data/HLSL/Alpha.fs" />
+		
+		
+		<Depth test="less" write="true" />
+	</Shader>
+	
+	<Shader name="NormalMapping">
+		<Ordering queue="opaque" />
+		<Program vertex="Data/HLSL/Passthrough_PCUTBN.vs" fragment="Data/HLSL/NormalMapping.fs" />
+		
+		<Blend>
+			<Color op="add" src="one" dst="zero"/>
+			<Alpha op="add" src="one" dst="zero"/>
+		</Blend>
+		<Depth test="less" write="true" />
+	</Shader>
+	
+	<Shader name="NormalMappingAlphaCutout">
+		<Ordering queue="opaque" />
+		<Program vertex="Data/HLSL/Passthrough_PCUTBN.vs" fragment="Data/HLSL/NormalMappingAlphaCutout.fs" />
+		<Cull mode="none" />
+		
+		<Blend>
+			<Color op="add" src="one" dst="zero"/>
+			<Alpha op="add" src="one" dst="zero"/>
+		</Blend>
+		<Depth test="less" write="true" />
+	</Shader>
+	
+	<Shader name="ParallaxMapping">
+		<Ordering queue="opaque" />
+		<Program vertex="Data/HLSL/Passthrough_PCUTBN.vs" fragment="Data/HLSL/ParallaxMapping.fs" />
+		
+		<Blend>
+			<Color op="add" src="one" dst="zero"/>
+			<Alpha op="add" src="one" dst="zero"/>
+		</Blend>
+		<Depth test="less" write="true" />
+	</Shader>
+	
+	<Shader name="Tessellation">
+		<Ordering queue="opaque" />
+		<Program 
+					vertex="Data/HLSL/Tessellation.vs"
+					hull="Data/HLSL/Tessellation.hs"
+					domain="Data/HLSL/Tessellation.ds"
+					fragment="Data/HLSL/NormalMapping.fs"
+		/>
+		
+		<Fill mode="solid" />
+	
+		<Blend>
+			<Color op="add" src="one" dst="zero"/>
+			<Alpha op="add" src="one" dst="zero"/>
+		</Blend>
+		<Depth test="less" write="true" />
+	</Shader>
+	
+	
+	<!-- PBR Lighting Shaders -->
+	<Shader name="PBR_PointLight">
+		<Ordering queue="opaque" />
+		<Program vertex="Data/HLSL/Passthrough_FSFX.vs" fragment="Data/HLSL/PointLight.fs" />
+		<Blend>
+			<Color op="add" src="one" dst="one"/>
+			<Alpha op="add" src="one" dst="zero"/>
+		</Blend>
+		<Cull mode="back" />
+
+		<Depth test="always" write="false" />
+	</Shader>
+	
+	<Shader name="PBR_SpotLight">
+		<Ordering queue="opaque" />
+		<Program vertex="Data/HLSL/Passthrough_FSFX.vs" fragment="Data/HLSL/SpotLight.fs" />
+		<Blend>
+			<Color op="add" src="one" dst="one"/>
+			<Alpha op="add" src="one" dst="zero"/>
+		</Blend>
+		<Cull mode="back" />
+
+		<Depth test="always" write="false" />
+	</Shader>
+	
+	<Shader name="PBR_SphereLight">
+		<Ordering queue="opaque" />
+		<Program vertex="Data/HLSL/Passthrough_FSFX.vs" fragment="Data/HLSL/SphereLight.fs" />
+		<Blend>
+			<Color op="add" src="one" dst="one"/>
+			<Alpha op="add" src="one" dst="zero"/>
+		</Blend>
+		<Cull mode="back" />
+
+		<Depth test="always" write="false" />
+	</Shader>
+	
+	<Shader name="PBR_TubeLight">
+		<Ordering queue="opaque" />
+		<Program vertex="Data/HLSL/Passthrough_FSFX.vs" fragment="Data/HLSL/TubeLight.fs" />
+		<Blend>
+			<Color op="add" src="one" dst="one"/>
+			<Alpha op="add" src="one" dst="zero"/>
+		</Blend>
+		<Cull mode="back" />
+
+		<Depth test="always" write="false" />
+	</Shader>
+	
+	<Shader name="PBR_IBL">
+		<Ordering queue="opaque" />
+		<Program vertex="Data/HLSL/Passthrough_FSFX.vs" fragment="Data/HLSL/IBL.fs" />
+		<Blend>
+			<Color op="add" src="one" dst="one"/>
+			<Alpha op="add" src="one" dst="zero"/>
+		</Blend>
+		<Depth test="always" write="false" />
+	</Shader>
+	
+	
+	<Shader name="CameraCompositor">
+		<Ordering queue="opaque" />
+		<Program vertex="Data/HLSL/SolidColor.vs" fragment="Data/HLSL/SolidColor.fs" />
+		<Depth test="always" write="false" />
+	</Shader>
+	
+	
+	
+	<!-- Full Screen Effects -->
+	<Shader name="FSFX_Desaturation">
+		<Program vertex="Data/HLSL/Passthrough_FSFX.vs" fragment="Data/HLSL/Desaturation.fs" />
+	</Shader>
+	
+	<Shader name="Tonemapper">
+		<Program vertex="Data/HLSL/Passthrough_FSFX.vs" fragment="Data/HLSL/Tonemapper.fs" />
+	</Shader>
+	
+	<Shader name="Fxaa">
+		<Program vertex="Data/HLSL/Passthrough_FSFX.vs" fragment="Data/HLSL/Fxaa.fs" />
+	</Shader>
+	
+</Shaders>
