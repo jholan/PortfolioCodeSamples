@@ -7,4 +7,4 @@ HLSL files use the following format
 .vs - Vertex Shader
 .fs - Fragment/ Pixel Shader
 .cs - Compute Shader
-.inc - An library file, this is meant to be included in another shader
+.inc - A library file, this is meant to be included in another shader
