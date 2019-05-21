@@ -28,6 +28,7 @@ float3 EvaluateBRDF(SurfaceProperties surface, float3 luminanceIn, float3 direct
 	
 	float3 halfVector = normalize(directionToLight + directionToEye);
 	
+	
 	// Specular Reflectance ------------------------------------------------------------------------------------------------------------
 	// Cook-Torrance BRDF
 	// Fresnel(F)

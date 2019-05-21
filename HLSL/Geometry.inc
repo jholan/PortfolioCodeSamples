@@ -8,7 +8,6 @@
 	_VS -> View Space
 	_CS -> Clip Space
 */
-
 // direction should be either directionToEye or directionToLight
 float Geometry_ModifiedTrowbridgeReitz(float3 normal, float3 direction, float roughness)
 {
